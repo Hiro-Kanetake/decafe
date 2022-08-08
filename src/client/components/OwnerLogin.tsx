@@ -68,7 +68,7 @@ const OwnerLogin: React.FC = () => {
             Don't have an account? click <Link to="/owners/new">HERE</Link> to
             create one!
           </div> */}
-          <button onClick={() => navigate("/owners/new")}>Sign Up</button>
+          <button onClick={() => navigate("/owners/new")}>Register</button>
         </form>
       </div>
     </>
