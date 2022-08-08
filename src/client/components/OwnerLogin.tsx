@@ -64,10 +64,11 @@ const OwnerLogin: React.FC = () => {
           <div>
             <input type="submit" id="submit-button" value="Login" />
           </div>
-          <div>
+          {/* <div>
             Don't have an account? click <Link to="/owners/new">HERE</Link> to
             create one!
-          </div>
+          </div> */}
+          <button onClick={() => navigate("/owners/new")}>Register</button>
         </form>
       </div>
     </>

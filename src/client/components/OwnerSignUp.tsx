@@ -53,12 +53,13 @@ const OwnerSignUp: React.FC = () => {
           <div className="error-message">{errors.password?.message}</div>
         </div>
         <div>
-          <input type="submit" id="submit-button" value="SignUp" />
+          <input type="submit" id="submit-button" value="Register" />
         </div>
-        <div>
+        {/* <div>
           Do you already have an account? click{" "}
           <Link to="/owners/login">HERE</Link> to login!
-        </div>
+        </div> */}
+        <button onClick={() => navigate("/owners/login")}>Login</button>
       </form>
     </div>
   );
