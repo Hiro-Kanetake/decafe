@@ -13,7 +13,7 @@ exports.seed = async function (knex) {
       address: "東京都新宿区新宿4丁目1-6 NEWoMan SHINJUKU 1F",
       city: "Shinjuku",
       latitude:  35.689137244447735,
-      longtitude: 139.70214623266088,
+      longitude: 139.70214623266088,
       station: "Shinjuku",
     },
     {
@@ -23,7 +23,7 @@ exports.seed = async function (knex) {
       city: "Shinjuku",
       address: "東京都新宿区新宿3丁目17-5 新宿ニュー富士ビル2F",
       latitude: 35.69359402373385,
-      longtitude: 139.70306908637016,
+      longitude: 139.70306908637016,
       station: "Shinjuku",
     },
     {
@@ -33,7 +33,7 @@ exports.seed = async function (knex) {
       address: "東京都渋谷区千駄ケ谷5丁目24-55 NEWoMan 新宿 2F",
       city: "Shibuya",
       latitude: 35.69003904125217,
-      longtitude: 139.70100823510552,
+      longitude: 139.70100823510552,
       station: "Shinjuku",
     },
     {
@@ -43,7 +43,7 @@ exports.seed = async function (knex) {
       address: "東京都新宿区新宿3-1-26 新宿三丁目 近代Bld.20 B1",
       city: "Shinjuku",
       latitude: 35.69178102461675,
-      longtitude:  139.70607290096044,
+      longitude:  139.70607290096044,
       station: "Shinjuku",
     },
     {
@@ -53,7 +53,7 @@ exports.seed = async function (knex) {
       address: "東京都渋谷区宇田川町21-6, Q Front, 1F",
       city: "Shibuya",
       latitude: 35.66692503988015,
-      longtitude: 139.69927272813126,
+      longitude: 139.69927272813126,
       station: "Shibuya",
     },
     {
@@ -63,7 +63,7 @@ exports.seed = async function (knex) {
       address: "東京都渋谷区宇田川町13-4",
       city: "Shibuya",
       latitude: 35.66720473537897,
-      longtitude: 139.69721307468842,
+      longitude: 139.69721307468842,
       station: "Shibuya",
     },
     {
@@ -73,7 +73,7 @@ exports.seed = async function (knex) {
       address: "東京都渋谷区道玄坂2丁目3-1, Shibuya Ekimae Bldg., 2-3階",
       city: "Shibuya",
       latitude: 35.664693057407455,
-      longtitude: 139.70064355586675,
+      longitude: 139.70064355586675,
       station: "Shibuya",
     },
     {
@@ -83,7 +83,7 @@ exports.seed = async function (knex) {
       address: "東京都渋谷区神宮前1丁目17-5",
       city: "Shibuya",
       latitude: 35.67303298584505,
-      longtitude: 139.70315638695337,
+      longitude: 139.70315638695337,
       station: "Harajuku",
     },
     {
@@ -93,7 +93,7 @@ exports.seed = async function (knex) {
       address: "東京都渋谷区神宮前1丁目18-20 原宿駅 2階",
       city: "Shibuya",
       latitude: 35.67142931249219,
-      longtitude: 139.70195446094542,
+      longitude: 139.70195446094542,
       station: "Harajuku",
     },
     {
@@ -103,7 +103,7 @@ exports.seed = async function (knex) {
       address: "東京都港区六本木3丁目13-8 zonanビル 2F",
       city: "Roppongi",
       latitude: 35.66580160183135,
-      longtitude: 139.73399543268954,
+      longitude: 139.73399543268954,
       station: "Roppongi",
     },
     {
@@ -113,7 +113,7 @@ exports.seed = async function (knex) {
       address: "東京都港区六本木5丁目4-20",
       city: "Roppongi",
       latitude: 35.664964878456395,
-      longtitude: 139.73365171148674,
+      longitude: 139.73365171148674,
       station: "Roppongi",
     },
   ]);

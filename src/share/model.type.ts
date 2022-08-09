@@ -3,7 +3,7 @@ export type ShopGet =
       name: string;
       address: string;
       latitude: string;
-      longtitude: string;
+      longitude: string;
     }
   | undefined;
 
@@ -18,7 +18,7 @@ export interface ShopCreate {
   address: string;
   city: string;
   latitude: number;
-  longtitude: number;
+  longitude: number;
   station: string;
 }
 
@@ -79,7 +79,7 @@ export interface AllShopGet {
   city: string;
   address: string;
   latitude: number;
-  longtitude: number;
+  longitude: number;
   station: string;
 }
 
@@ -89,7 +89,7 @@ export interface ShopInfo {
   address: string;
   city: string;
   latitude: number;
-  longtitude: number;
+  longitude: number;
   station: string;
   owner_id: number;
 }
