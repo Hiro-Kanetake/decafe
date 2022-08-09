@@ -51,8 +51,11 @@ const Owner: React.FC = () => {
     <div className="shopListWrapper">
       <OwnerPortalHeader />
       <h2>
-        Shops in <span className="stationName"/>
+        My Shops <span className="stationName"/>
       </h2>
+      <p>
+         <Link to="/shops/new">Add Shop</Link>
+      </p>
       <div className="shopInfoWrapper">{displayShops}</div>
       <div className="cafeShopPicWrapper"></div>
     </div>
