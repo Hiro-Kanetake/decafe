@@ -14,6 +14,7 @@ exports.seed = async function (knex) {
       city: "Fuzisawa",
       latitude: 35.3239757,
       longtitude: 139.4770707,
+      station: "Shinagawa",
     },
     {
       id: 2,
@@ -23,6 +24,7 @@ exports.seed = async function (knex) {
       address: "38 West Newton Street, Boston, MA 02116",
       latitude: 42.3390094,
       longtitude: -71.0741938,
+      station: "Shinjuku",
     },
     {
       id: 3,
@@ -32,6 +34,7 @@ exports.seed = async function (knex) {
       city: "Fuzisawa",
       latitude: 35.3782411,
       longtitude: 139.4446044,
+      station: "Shibuya",
     },
     {
       id: 4,
@@ -41,6 +44,7 @@ exports.seed = async function (knex) {
       city: "Boston",
       latitude: 42.339201,
       longtitude: -71.076358,
+      station: "Tokyo",
     },
     {
       id: 5,
@@ -50,6 +54,7 @@ exports.seed = async function (knex) {
       city: "New York",
       latitude: 40.7127753,
       longtitude: -74.0059728,
+      station: "Ebisu",
     },
     {
       id: 6,
@@ -59,6 +64,7 @@ exports.seed = async function (knex) {
       city: "Osaka",
       latitude: 34.4638854,
       longtitude: 135.5011332,
+      station: "Harajuku",
     },
     {
       id: 7,
@@ -68,6 +74,7 @@ exports.seed = async function (knex) {
       city: "Osaka",
       latitude: 34.8078083,
       longtitude: 135.6820816,
+      station: "Ikebukuro",
     },
     {
       id: 8,
@@ -77,6 +84,7 @@ exports.seed = async function (knex) {
       city: "Osaka",
       latitude: 34.387699,
       longtitude: 135.2902878,
+      station: "Asakusa",
     },
   ]);
 };
