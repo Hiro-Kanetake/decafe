@@ -3,24 +3,20 @@ import { Link } from "react-router-dom";
 import { findAllShops } from "../api";
 import { SearchbarOptions } from "./Home";
 import "../styles/searchResult.css";
-
-interface AllShopsInfo {
-  id: number;
-  name: string;
-  address: string;
-}
+import MenuMapWrapper from "./MenuMapWrapper";
+import modelType from "../model.type";
+import { ShopInfo } from "../../share/model.type";
 
 interface SearchResultProps {
   selectedOption: SearchbarOptions | null;
 }
 
 const SearchResult: React.FC<SearchResultProps> = ({ selectedOption }) => {
-  const [allShops, setAllShops] = useState<AllShopsInfo[]>([]);
+  const [allShops, setAllShops] = useState<ShopInfo[]>([]);
 
   let displayShops = allShops.map((shop) => {
     return (
       <div className="shopInfo">
-        <Link to={"/shops/" + shop.id}>
           <div className="shopInfoText">
             <span className="shopName">{shop.name}</span>
             <br></br>
@@ -31,8 +27,10 @@ const SearchResult: React.FC<SearchResultProps> = ({ selectedOption }) => {
                 alt="cute coffee"
               />
             </div>
+            <div className="mapmenuwrapper">
+              <MenuMapWrapper shopInfo={shop} />
+            </div>
           </div>
-        </Link>
       </div>
     );
   });
@@ -41,7 +39,7 @@ const SearchResult: React.FC<SearchResultProps> = ({ selectedOption }) => {
   useEffect(() => {
     (async () => {
       const result = await findAllShops();
-      const filteredShops: AllShopsInfo[] = result.filter((e) => {
+      const filteredShops: ShopInfo[] = result.filter((e) => {
         return e.station === selectedOption?.value;
       });
       setAllShops(filteredShops);
