@@ -37,7 +37,6 @@ const OwnerLogin: React.FC = () => {
           </Link>
         </div> */}
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="logintitle"> Login </div>
           <div className="error-message">{message}</div>
           <div>
             <label>Username </label>
