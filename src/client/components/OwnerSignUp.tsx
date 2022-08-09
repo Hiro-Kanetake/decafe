@@ -22,6 +22,7 @@ const OwnerSignUp: React.FC = () => {
     if (errorInfo.message) {
       setMessage(errorInfo.message);
     } else {
+      alert("You have successfully registered!")
       navigate("/owners/id");
     }
   };
@@ -69,11 +70,6 @@ const OwnerSignUp: React.FC = () => {
           <div className="buttonArea_ow">
             <input type="submit" id="submit-button" value="Register" />
           </div>
-          {/* <div>
-          Do you already have an account? click{" "}
-          <Link to="/owners/login">HERE</Link> to login!
-        </div> */}
-          {/* <button onClick={() => navigate("/owners/login")}>Login</button> */}
         </form>
       </div>
     </div>

@@ -22,7 +22,7 @@ const OwnerLogin: React.FC = () => {
     if (errorInfo.message) {
       setMessage(errorInfo.message);
     } else {
-      // navigate("/");
+      alert("Log-in successful. Welcome to OWNER PORTAL")
       navigate("/owners/id");
     }
   };
