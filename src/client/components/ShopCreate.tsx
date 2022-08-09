@@ -178,7 +178,7 @@ const ShopCreate: React.FC = () => {
         </button>
       </fieldset>
       <button type="submit" id="submit-button">
-        Create
+        Add Shop
       </button>
     </form>
   );
