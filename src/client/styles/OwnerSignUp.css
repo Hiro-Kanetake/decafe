@@ -97,6 +97,8 @@
 
 .buttonArea_ow #submit-button {
   width: 200px;
+  background: coral;
+  border: none;
 }
 .error-message {
   color: red;
