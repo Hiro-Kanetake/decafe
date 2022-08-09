@@ -14,7 +14,9 @@
   }
 
 .menuTop {
-  font-size: 40px;
+  font-size: 20px;
+  margin: 0 0 5px 0;
+  padding: 0;
 }
 
 .list {
@@ -22,9 +24,6 @@
     justify-content:flex-start;
     color:currentColor;
     text-decoration:none;
-    padding:3px;
-    order:0;
-    
 }
 
 
@@ -46,20 +45,27 @@
   order:2;
 }
 
-.drinktitle{
-  font-weight:bold;
+.menu {
+  padding: 0;
 }
 
-.drinkpricetitle{
-  font-weight:bold;
-  order:3
+.menuTitle_ow {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 
+.menu_ow {
+  padding: 0;
+  margin: 0;
+}
 .drinkprice{
   order: 3;
 }
 
-.list:hover {
+/* .list:hover {
   transition:background-color 0.3s;
   background:rgba(255,255,0,0.15);
   opacity:1 !important;
@@ -69,4 +75,4 @@
   transition:flex-grow 0.3s;
   width:0; flex-grow:0;
   transform-origin:center bottom;
-}
+} */

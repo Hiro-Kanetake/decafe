@@ -104,7 +104,10 @@ const ShopCreate: React.FC = () => {
         <div className="error-message">{errors.shop?.station?.message}</div>
         <label htmlFor="shop.station">Station:</label>
         <input
-          {...register("shop.station", { required: "Required", maxLength: 255 })}
+          {...register("shop.station", {
+            required: "Required",
+            maxLength: 255,
+          })}
           id="shop.station"
           placeholder="Station"
         />
@@ -148,10 +151,12 @@ const ShopCreate: React.FC = () => {
         </legend>
         <table>
           <thead>
-            <th>#</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Action</th>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
           </thead>
           <tbody>
             {fields.map((field, index) => (
