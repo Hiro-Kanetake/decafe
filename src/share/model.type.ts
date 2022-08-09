@@ -91,4 +91,5 @@ export interface ShopInfo {
   latitude: number;
   longtitude: number;
   station: string;
+  owner_id: number;
 }
