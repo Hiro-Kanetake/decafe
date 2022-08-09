@@ -78,5 +78,17 @@ export interface AllShopGet {
   name: string;
   city: string;
   address: string;
+  latitude: number;
+  longtitude: number;
+  station: string;
+}
+
+export interface ShopInfo {
+  id: number;
+  name: string;
+  address: string;
+  city: string;
+  latitude: number;
+  longtitude: number;
   station: string;
 }
