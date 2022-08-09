@@ -39,8 +39,8 @@ const OwnerLogin: React.FC = () => {
         </div> */}
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="error-message">{message}</div>
-          <div>
-            <label>Username </label>
+          <div className="form_ow">
+            <label>Username</label>
             <input
               type="text"
               id="name"
@@ -51,8 +51,8 @@ const OwnerLogin: React.FC = () => {
             />
             <div className="error-message">{errors.name?.message}</div>
           </div>
-          <div>
-            <label>Password </label>
+          <div className="form_ow">
+            <label>Password</label>
             <input
               type="password"
               id="password"
@@ -61,7 +61,7 @@ const OwnerLogin: React.FC = () => {
             />
             <div className="error-message">{errors.password?.message}</div>
           </div>
-          <div>
+          <div className="form_ow">
             <input type="submit" id="submit-button" value="Login" />
           </div>
           {/* <div>
