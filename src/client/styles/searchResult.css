@@ -12,8 +12,13 @@
     padding-bottom: 1rem;
 }
 
-.stationName{
+h2.searchResultTitle {
+    font-weight: lighter;
+}
+
+span.stationName{
     font-weight: bold;
+    color: #dd904a;
 }
 
 .shopInfoWrapper {
@@ -45,9 +50,9 @@
     padding-top: 1rem;
 }
 
-.shopInfoText {
+/* .shopInfoText {
 
-}
+} */
 
 .imageWrapper img {
     border: hidden;

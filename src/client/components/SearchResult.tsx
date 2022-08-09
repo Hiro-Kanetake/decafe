@@ -57,8 +57,8 @@ const SearchResult: React.FC<SearchResultProps> = ({ selectedOption }) => {
 
   return (
     <div className="shopListWrapper">
-      <h2>
-        Shops in <span className="stationName">{selectedOption?.label}</span>
+      <h2 className="searchResultTitle">
+        Cafes around <span className="stationName">{selectedOption?.label} Station</span>
       </h2>
       <div className="shopInfoWrapper">{displayShops}</div>
       <div className="cafeShopPicWrapper"></div>
