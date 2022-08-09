@@ -104,7 +104,10 @@ const ShopCreate: React.FC = () => {
         <div className="error-message">{errors.shop?.station?.message}</div>
         <label htmlFor="shop.station">Station:</label>
         <input
-          {...register("shop.station", { required: "Required", maxLength: 255 })}
+          {...register("shop.station", {
+            required: "Required",
+            maxLength: 255,
+          })}
           id="shop.station"
           placeholder="Station"
         />

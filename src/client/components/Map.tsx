@@ -17,8 +17,6 @@ const Map: React.FC<ShopInfoProps> = ({ shopDetail }) => {
       <div className="map">
         <iframe
           src={`https://maps.google.com/maps?q=${shoploc.lat}, ${shoploc.lng}&z=15&output=embed`}
-          width="250"
-          height="250"
           loading="lazy"
         ></iframe>
       </div>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 .shopListWrapper {
     margin-top: 1rem;
     margin-left: 20rem;
@@ -66,6 +67,63 @@
     font-size: 25px;
 }
 
+.shopName:hover {
+    color: #dd904a;
+    text-decoration: underline;
+}
+
 .shopAddress{
     font-size: 12px;
+}
+
+.mapwrapper .map {
+    margin: 0;
+    width: 100%;
+}
+
+.mapwrapper .map iframe{
+    width: 100%;
+}
+
+.shopInfo_ow .mapwrapper {
+    margin-top: 0;
+    font-family: "Montserrat";
+    float: none;
+    display: initial;
+}
+
+.mapmenuwrapper {
+    margin: 20px 0 0 0;
+}
+
+.mapmenuwrapper .menutable {
+    padding: 10px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    font-size: 0.9em;
+    display: flex;
+    position: relative;
+    flex-flow: column nowrap;
+    font-family: 'Poppins', sans-serif;
+    min-width: 400px;
+    background: #fff;
+    box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+    margin-left: 0;
+    margin-bottom: 20px;
+    float: none;
+    letter-spacing: 0;
+    transition: 0.5s;
+}
+
+.check {
+    display: none;
+}
+
+.check +.shopInfo_ow {
+    display: none;
+}
+
+.check:checked + .shopInfo_ow{
+    display: block;
+    padding: 20px;
 }
