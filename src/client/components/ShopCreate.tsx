@@ -39,7 +39,7 @@ const ShopCreate: React.FC = () => {
   });
 
   const [owner_id, setOwnerId] = useState<number | null>(null);
-
+  
   const navigate = useNavigate();
   const navigateRef = useRef(navigate);
 
@@ -108,6 +108,13 @@ const ShopCreate: React.FC = () => {
           id="shop.station"
           placeholder="Station"
         />
+         <div className="error-message">{errors.shop?.city?.message}</div>
+        <label htmlFor="shop.city">City:</label>
+        <input
+          {...register("shop.city", { required: "Required", maxLength: 255 })}
+          id="shop.city"
+          placeholder="City"
+        />
         <div className="error-message">{errors.shop?.address?.message}</div>
         <label htmlFor="shop.address">Address:</label>
         <input
@@ -148,10 +155,12 @@ const ShopCreate: React.FC = () => {
         </legend>
         <table>
           <thead>
-            <th>#</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Action</th>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
           </thead>
           <tbody>
             {fields.map((field, index) => (
