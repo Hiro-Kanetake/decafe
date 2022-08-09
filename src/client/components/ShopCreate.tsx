@@ -5,6 +5,7 @@ import { createMenus, createShop, decodeOwnerId } from "../api";
 import modelType from "../model.type";
 import "../styles/ShopCreate.css";
 import MenuItem from "./MenuItem";
+import OwnerPortalHeader from "./OwnerPortalHeader";
 
 interface Shop {
   name: string;
@@ -88,6 +89,8 @@ const ShopCreate: React.FC = () => {
   }, [navigate]);
 
   return (
+    <>
+    <OwnerPortalHeader />
     <form onSubmit={onSubmit}>
       <h1>Create Shop</h1>
       <fieldset>
@@ -184,6 +187,7 @@ const ShopCreate: React.FC = () => {
         Add Shop
       </button>
     </form>
+      </>
   );
 };
 
