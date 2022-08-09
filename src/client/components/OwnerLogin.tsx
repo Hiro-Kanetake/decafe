@@ -22,7 +22,8 @@ const OwnerLogin: React.FC = () => {
     if (errorInfo.message) {
       setMessage(errorInfo.message);
     } else {
-      navigate("/");
+      // navigate("/");
+      navigate("/owners/id");
     }
   };
 

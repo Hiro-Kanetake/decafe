@@ -6,6 +6,7 @@ import OwnerSignUp from "./OwnerSignUp";
 import ShopCreate from "./ShopCreate";
 import { PrivateRoute } from "../AuthRouter";
 import OwnerLogout from "./OwnerLogout";
+import Owner from "./Owner";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
             }
           ></Route>
           <Route path="/shops/:id" element={<ShopDetail />}></Route>
+          <Route path="/owners/id" element={<Owner />}></Route>
         </Routes>
       </Router>
     </>
