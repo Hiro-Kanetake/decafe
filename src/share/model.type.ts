@@ -64,8 +64,8 @@ export type ShopAndMenu =
     }
   | undefined;
 
-export interface CitiesGet {
-  city: string;
+export interface StationsGet {
+  station: string;
 }
 
 export interface StationsGet {

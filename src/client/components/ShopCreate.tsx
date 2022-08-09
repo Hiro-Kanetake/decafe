@@ -12,6 +12,7 @@ interface Shop {
   city: string;
   latitude: number;
   longtitude: number;
+  station: string;
 }
 
 interface Menu {
@@ -100,12 +101,12 @@ const ShopCreate: React.FC = () => {
           id="shop.name"
           placeholder="Shop Name"
         />
-        <div className="error-message">{errors.shop?.city?.message}</div>
-        <label htmlFor="shop.city">City:</label>
+        <div className="error-message">{errors.shop?.station?.message}</div>
+        <label htmlFor="shop.station">Station:</label>
         <input
-          {...register("shop.city", { required: "Required", maxLength: 255 })}
-          id="shop.city"
-          placeholder="City"
+          {...register("shop.station", { required: "Required", maxLength: 255 })}
+          id="shop.station"
+          placeholder="Station"
         />
         <div className="error-message">{errors.shop?.address?.message}</div>
         <label htmlFor="shop.address">Address:</label>
