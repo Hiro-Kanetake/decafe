@@ -29,36 +29,46 @@ const Owner: React.FC = () => {
   let displayShops = allShops.map((shop) => {
     return (
       <div className="shopInfo">
-          <div className="shopInfoText">
-            <span className="shopName">{shop.name}</span>
-            <br></br>
-            Address: <span className="shopAddress">{shop.address}</span>
-            <div className="imageWrapper">
-              <img
-                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                alt="cute coffee"
-              />
-            </div>
-            <div className="mapmenuwrapper">
-              <MenuMapWrapper shopInfo={shop} />
-            </div>
+        <div className="shopInfoText">
+          <label className="shopName" htmlFor={shop.id + "accordion"}>
+            {shop.name}
+          </label>
+          <br></br>
+          Address: <span className="shopAddress">{shop.address}</span>
+          <div className="imageWrapper">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              alt="cute coffee"
+            />
           </div>
+          <div className="mapmenuwrapper">
+            <input
+              type="checkbox"
+              name=""
+              id={shop.id + "accordion"}
+              className="check"
+            />
+            <MenuMapWrapper shopInfo={shop} />
+          </div>
+        </div>
       </div>
     );
   });
 
   return (
-    <div className="shopListWrapper">
+    <>
       <OwnerPortalHeader />
-      <h2>
-        My Shops <span className="stationName"/>
-      </h2>
-      <p>
-         <Link to="/shops/new">Add Shop</Link>
-      </p>
-      <div className="shopInfoWrapper">{displayShops}</div>
-      <div className="cafeShopPicWrapper"></div>
-    </div>
+      <div className="shopListWrapper">
+        <h2>
+          My Shops <span className="stationName" />
+        </h2>
+        <p className="addButton_owPortal">
+          <Link to="/shops/new">Add Shop</Link>
+        </p>
+        <div className="shopInfoWrapper">{displayShops}</div>
+        <div className="cafeShopPicWrapper"></div>
+      </div>
+    </>
   );
 };
 
