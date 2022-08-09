@@ -81,19 +81,19 @@ export const findShopAndMenuById = async (
 };
 
 /**
- * Get all cities data from shops table.
+ * Get all stations data from shops table.
  *
- * @returns All cities
+ * @returns All stations
  */
-export const findAllUniqueCities = async (): Promise<modelType.CitiesGet[]> => {
-  let cities: modelType.CitiesGet[];
+export const findAllUniqueStations = async (): Promise<modelType.StationsGet[]> => {
+  let stations: modelType.StationsGet[];
   try {
-    const response = await axios.get<modelType.CitiesGet[]>(`/api/v1/cities`);
-    cities = response.data;
+    const response = await axios.get<modelType.StationsGet[]>(`/api/v1/stations`);
+    stations = response.data;
   } catch (error) {
     throw error;
   }
-  return cities;
+  return stations;
 };
 
 /**

@@ -57,17 +57,17 @@ router.get("/shops/:id", async (req, res) => {
   return res.status(200).send(shopAndMenu);
 });
 
-router.get("/cities", async (req, res) => {
-  let cities: modelType.CitiesGet;
+router.get("/stations", async (req, res) => {
+  let stations: modelType.StationsGet;
   try {
-    cities = await ShopRepository.findAllUniqueCities();
+    stations = await ShopRepository.findAllUniqueStations();
   } catch (error) {
     console.log(error);
     res.status(500).send();
     return;
   }
 
-  return res.status(200).send(cities);
+  return res.status(200).send(stations);
 });
 
 export default router;

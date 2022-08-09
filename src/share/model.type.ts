@@ -19,6 +19,7 @@ export interface ShopCreate {
   city: string;
   latitude: number;
   longtitude: number;
+  station: string;
 }
 
 export interface MenuCreate {
@@ -63,8 +64,12 @@ export type ShopAndMenu =
     }
   | undefined;
 
-export interface CitiesGet {
-  city: string;
+export interface StationsGet {
+  station: string;
+}
+
+export interface StationsGet {
+  station: string;
 }
 
 export interface AllShopGet {
@@ -73,4 +78,5 @@ export interface AllShopGet {
   name: string;
   city: string;
   address: string;
+  station: string;
 }

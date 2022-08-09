@@ -37,12 +37,12 @@ const SearchResult: React.FC<SearchResultProps> = ({ selectedOption }) => {
     );
   });
 
-  //filter shops by city
+  //filter shops by station
   useEffect(() => {
     (async () => {
       const result = await findAllShops();
       const filteredShops: AllShopsInfo[] = result.filter((e) => {
-        return e.city === selectedOption?.value;
+        return e.station === selectedOption?.value;
       });
       setAllShops(filteredShops);
     })();
@@ -51,7 +51,7 @@ const SearchResult: React.FC<SearchResultProps> = ({ selectedOption }) => {
   return (
     <div className="shopListWrapper">
       <h2>
-        Shops in <span className="cityName">{selectedOption?.label}</span>
+        Shops in <span className="stationName">{selectedOption?.label}</span>
       </h2>
       <div className="shopInfoWrapper">{displayShops}</div>
       <div className="cafeShopPicWrapper"></div>

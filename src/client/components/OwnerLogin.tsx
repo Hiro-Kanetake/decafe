@@ -31,13 +31,12 @@ const OwnerLogin: React.FC = () => {
       <OwnerHeader />
 
       <div className="login">
-        <div className="logocenter">
+        {/* <div className="logocenter">
           <Link to="/" reloadDocument>
             <img src="/images/decafeowner.png" className="ownerlogo"></img>
           </Link>
-        </div>
+        </div> */}
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="logintitle"> Login </div>
           <div className="error-message">{message}</div>
           <div>
             <label>Username </label>
@@ -64,10 +63,11 @@ const OwnerLogin: React.FC = () => {
           <div>
             <input type="submit" id="submit-button" value="Login" />
           </div>
-          <div>
+          {/* <div>
             Don't have an account? click <Link to="/owners/new">HERE</Link> to
             create one!
-          </div>
+          </div> */}
+          {/* <button onClick={() => navigate("/owners/new")}>Register</button> */}
         </form>
       </div>
     </>

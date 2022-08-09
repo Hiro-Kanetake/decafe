@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Select from "react-select";
-import { findAllUniqueCities } from "../api";
+import { findAllUniqueStations } from "../api";
 import "../styles/searchbar.css";
 import { SearchbarOptions } from "./Home";
 import { Link } from "react-router-dom";
@@ -20,14 +20,14 @@ const Searchbar: React.FC<SearchbarProps> = ({
 
   useEffect(() => {
     (async () => {
-      const result = await findAllUniqueCities();
-      const cities: SearchbarOptions[] = result.map((e) => {
+      const result = await findAllUniqueStations();
+      const stations: SearchbarOptions[] = result.map((e) => {
         return {
-          label: e.city,
-          value: e.city,
+          label: e.station,
+          value: e.station,
         };
       });
-      setOptions(cities);
+      setOptions(stations);
     })();
   }, []);
 
@@ -46,7 +46,7 @@ const Searchbar: React.FC<SearchbarProps> = ({
         value={selectedOption}
         onChange={handleChange}
         options={options}
-        placeholder="ex. Fuzisawa"
+        placeholder="ex. Tokyo"
         backspaceRemovesValue={true}
         isClearable
         openMenuOnFocus

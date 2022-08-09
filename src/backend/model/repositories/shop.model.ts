@@ -51,24 +51,24 @@ export async function findShopById(id: number): Promise<modelType.ShopGet> {
 }
 
 /**
- * Get all cities shop data.
+ * Get all station's shop data.
  *
  * @returns Shop data find by id
  */
-export async function findAllUniqueCities(): Promise<modelType.CitiesGet> {
-  let cities: modelType.CitiesGet;
+export async function findAllUniqueStations(): Promise<modelType.StationsGet> {
+  let stations: modelType.StationsGet;
 
   try {
-    cities = await knex
-      .select("city")
-      .orderBy("city", "asc")
+    stations = await knex
+      .select("station")
+      .orderBy("station", "asc")
       .distinct()
       .from(TABLE_SHOPS);
   } catch (error) {
     throw error;
   }
 
-  return cities;
+  return stations;
 }
 
 /**
@@ -81,8 +81,8 @@ export async function findAllShops(): Promise<modelType.AllShopGet> {
 
   try {
     allShops = await knex
-      .select("id", "name", "city", "address")
-      .orderBy("city", "asc")
+      .select("id", "name", "station", "address")
+      .orderBy("station", "asc")
       .from(TABLE_SHOPS);
   } catch (error) {
     throw error;
