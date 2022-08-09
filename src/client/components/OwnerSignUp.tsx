@@ -27,8 +27,10 @@ const OwnerSignUp: React.FC = () => {
   };
 
   return (
-    <div className="PARENT">
-      <OwnerLogin />
+    <div className="PARENT signup_ow">
+      <div className="header_ow">
+        <OwnerLogin />
+      </div>
       <div className="sign-up">
         <div className="logocenter">
           <Link to="/" reloadDocument>
@@ -40,10 +42,10 @@ const OwnerSignUp: React.FC = () => {
           </Link>
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div>Create Account</div>
+          <h2>Create Account</h2>
           <div className="error-message">{message}</div>
-          <div>
-            <label>Username </label>
+          <div className="formBox_ow">
+            <label>Username</label>
             <input
               type="text"
               id="name"
@@ -54,7 +56,7 @@ const OwnerSignUp: React.FC = () => {
             />
             <div className="error-message">{errors.name?.message}</div>
           </div>
-          <div>
+          <div className="formBox_ow">
             <label>Password </label>
             <input
               type="password"
@@ -64,7 +66,7 @@ const OwnerSignUp: React.FC = () => {
             />
             <div className="error-message">{errors.password?.message}</div>
           </div>
-          <div>
+          <div className="buttonArea_ow">
             <input type="submit" id="submit-button" value="Register" />
           </div>
           {/* <div>
