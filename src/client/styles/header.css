@@ -111,6 +111,7 @@ a  {
   font-style: normal;
   border-radius: 5px;
   box-sizing: border-box;
+  font-family: "Montserrat";
 }
 
 .logoutButton_owPortal a{

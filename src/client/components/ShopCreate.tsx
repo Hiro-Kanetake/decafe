@@ -92,10 +92,10 @@ const ShopCreate: React.FC = () => {
     <>
     <OwnerPortalHeader />
     <form onSubmit={onSubmit}>
-      <h1>Create Shop</h1>
+      <h1>Add Shop</h1>
       <fieldset>
         <legend>
-          <span className="number">1</span> Your Shop Info
+          <span className="number">1</span> Shop Info
         </legend>
         <div className="error-message">{errors.shop?.name?.message}</div>
         <label htmlFor="shop.name">Shop name:</label>
@@ -157,7 +157,7 @@ const ShopCreate: React.FC = () => {
       </fieldset>
       <fieldset>
         <legend>
-          <span className="number">2</span> Your Menu Info
+          <span className="number">2</span> Menu Info
         </legend>
         <table>
           <thead>
