@@ -7,7 +7,7 @@ const Header = () => {
     <header className="App-header">
       <div className="header">
       <Link to="/" reloadDocument></Link>
-      <button onClick={() => navigate("./owners/login")}>Owner Log-in</button>
+      <button onClick={() => navigate("./owners/new")}>Owner Portal</button>
     </div>
 
     </header>
