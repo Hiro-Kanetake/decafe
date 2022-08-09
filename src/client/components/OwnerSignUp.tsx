@@ -22,7 +22,7 @@ const OwnerSignUp: React.FC = () => {
     if (errorInfo.message) {
       setMessage(errorInfo.message);
     } else {
-      navigate("/");
+      navigate("/owners/id");
     }
   };
 
