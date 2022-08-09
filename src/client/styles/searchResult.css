@@ -46,14 +46,12 @@
 }
 
 .shopInfoText {
-    display: inline-block;
-    padding-left: 20px;
-    flex-grow: 400px;
+
 }
 
 .imageWrapper img {
     border: hidden;
-    float: left;
+    float: none;
 }
 
 .imageWrapper img {
@@ -105,7 +103,7 @@
     position: relative;
     flex-flow: column nowrap;
     font-family: 'Poppins', sans-serif;
-    min-width: 400px;
+    min-width: auto;
     background: #fff;
     box-shadow: 0 0 20px rgb(0 0 0 / 15%);
     margin-left: 0;
@@ -126,4 +124,22 @@
 .check:checked + .shopInfo_ow{
     display: block;
     padding: 20px;
+}
+
+.addButton_owPortal {
+    width: 150px;
+    text-align: right;
+    background-color: #dd904a;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 0 20px auto;
+}
+
+.addButton_owPortal a {
+    padding: 10px 20px;
+    display: block;
+    color: #FFF;
 }

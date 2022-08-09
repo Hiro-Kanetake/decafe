@@ -75,3 +75,50 @@ a  {
   color: black;
 }
 
+.header_owPortal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.header_owPortal .ownerWrapper {
+  margin: 0;
+}
+
+.header_owPortal .ownerWrapper a {
+  display: block;
+  margin: 0;
+}
+
+.header_owPortal .logo {
+  width: 100px;
+}
+
+.header_owPortal h2 {
+  margin: 0;
+  color: #dd904a;
+  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logoutButton_owPortal {
+  width: 100px;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.logoutButton_owPortal a{
+  padding: 10px 20px;
+  display: block;
+  color: #FFF;
+}
+
+.logoutButton_owPortal a:visited {
+    color: #FFF;
+}

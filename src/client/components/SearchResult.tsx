@@ -18,7 +18,7 @@ const SearchResult: React.FC<SearchResultProps> = ({ selectedOption }) => {
     return (
       <div className="shopInfo">
         <div className="shopInfoText">
-          <label className="shopName" htmlFor="accordion">
+          <label className="shopName" htmlFor={shop.id + "accordion"}>
             {shop.name}
           </label>
           <p>
@@ -32,7 +32,12 @@ const SearchResult: React.FC<SearchResultProps> = ({ selectedOption }) => {
           </div>
         </div>
         <div className="mapmenuwrapper">
-          <input type="checkbox" name="" id="accordion" className="check" />
+          <input
+            type="checkbox"
+            name=""
+            id={shop.id + "accordion"}
+            className="check"
+          />
           <MenuMapWrapper shopInfo={shop} />
         </div>
       </div>

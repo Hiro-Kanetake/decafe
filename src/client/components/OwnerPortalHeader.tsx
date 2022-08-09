@@ -28,13 +28,13 @@ const OwnerPortalHeader: React.FC = () => {
   };
 
   return (
-    <>
+    <div className="header_owPortal">
       <OwnerHeader />
-      <h1>OWNER PORTAL</h1>
-      <p>
-         <Link to="/owners/logout">Logout</Link>
+      <h2>OWNER PORTAL</h2>
+      <p className="logoutButton_owPortal">
+        <Link to="/owners/logout">Logout</Link>
       </p>
-    </>
+    </div>
   );
 };
 
