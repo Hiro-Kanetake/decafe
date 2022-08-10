@@ -6,12 +6,20 @@ import {
 } from "react-router-dom";
 import "../styles/header.css";
 import { decodeOwnerId } from "../api";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const navigate = useNavigate();
-  // const [buttonText, setButtonText] = useState<string>("");
-  // setButtonText("OOOOOO");
+  const [buttonText, setButtonText] = useState<string>("");
+  useEffect(() => {
+    decodeOwnerId()
+      .then(() => {
+        setButtonText("My Portal");
+      })
+      .catch(() => {
+        setButtonText("Owner Portal");
+      });
+  }, []);
 
   return (
     <header className="App-header">
@@ -28,8 +36,7 @@ const Header = () => {
               });
           }}
         >
-          Owner Portal
-          {/* {buttonText} */}
+          {buttonText}
         </button>
       </div>
     </header>
