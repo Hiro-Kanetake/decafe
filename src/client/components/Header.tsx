@@ -32,7 +32,7 @@ const Header = () => {
                 navigate("./owners");
               })
               .catch(() => {
-                navigate("./owners/new");
+                navigate("./owners/access");
               });
           }}
         >

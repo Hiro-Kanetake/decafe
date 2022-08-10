@@ -65,10 +65,10 @@ const OwnerLogin: React.FC = () => {
             <input type="submit" id="submit-button" value="Login" />
           </div>
           {/* <div>
-            Don't have an account? click <Link to="/owners/new">HERE</Link> to
+            Don't have an account? click <Link to="/owners/access">HERE</Link> to
             create one!
           </div> */}
-          {/* <button onClick={() => navigate("/owners/new")}>Register</button> */}
+          {/* <button onClick={() => navigate("/owners/access")}>Register</button> */}
         </form>
       </div>
     </>

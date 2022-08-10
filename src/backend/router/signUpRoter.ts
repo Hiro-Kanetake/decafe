@@ -10,7 +10,7 @@ import {
 } from "./Errors";
 
 const router = express.Router();
-router.post("/owners/new", async (req, res) => {
+router.post("/owners/access", async (req, res) => {
   try {
     const user: modelType.SignUpOwner = req.body;
     if (!user.name || !user.password) {
