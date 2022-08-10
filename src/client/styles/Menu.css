@@ -1,15 +1,11 @@
-
 .menutable {
     border-collapse: collapse;
     font-size: 0.9em;
     display:flex;
     position: relative;
     flex-flow:column nowrap;
-    font-family: "IM Fell English SC";
     min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     margin-left: 300px;
-    float: left;
     letter-spacing: 1px;
   }
 
@@ -22,6 +18,7 @@
 .list {
     display:flex;
     justify-content:flex-start;
+    align-items: center;
     color:currentColor;
     text-decoration:none;
 }
@@ -31,7 +28,6 @@
   content:"";
   display:block;
   border-bottom:1px dotted black;
-  position:relative; top:-3px;
   flex:1 1 auto;
   margin:0 1rem;
   order:1;
@@ -64,15 +60,3 @@
 .drinkprice{
   order: 3;
 }
-
-/* .list:hover {
-  transition:background-color 0.3s;
-  background:rgba(255,255,0,0.15);
-  opacity:1 !important;
-}
-
-.list:hover > .list::before {
-  transition:flex-grow 0.3s;
-  width:0; flex-grow:0;
-  transform-origin:center bottom;
-} */

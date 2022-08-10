@@ -102,12 +102,12 @@ const Owner: React.FC = () => {
 
         <div className="shopListWrapper">
           <div className="shopListWrapperIn">
-            <h2>
-              My Shops <span className="stationName" />
-            </h2>
             <p className="addButton_owPortal">
               <Link to="/shops/new">Add Shop</Link>
             </p>
+            <h2>
+              My Shops <span className="stationName" />
+            </h2>
             <div className="shopInfoWrapper">{displayShops}</div>
             <div className="cafeShopPicWrapper"></div>
           </div>

@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-.shopListWrapper {
-    background: #eaeaea;
-}
-
 .shopListWrapperIn {
     padding: 150px 0 0 0;
     margin: 0 auto;
@@ -31,10 +27,6 @@ span.stationName{
 .shopInfoWrapper {
     width: 800px;
     margin: 0 auto;
-    /* padding: 20px;
-    border-radius: 8px;
-    background: #fff;
-    border: 1px solid hsl(0, 0%, 80%); */
 }
 
 .shopInfoWrapper a, a:visited {
@@ -114,8 +106,7 @@ span.stationName{
     font-family: 'Poppins', sans-serif;
     min-width: auto;
     background: #fff;
-    border: 1px solid #eaeaea;
-    box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+    border: 1px solid #e8e8e8;
     margin-left: 0;
     margin-bottom: 20px;
     float: none;
@@ -145,7 +136,7 @@ span.stationName{
     font-style: normal;
     border-radius: 5px;
     box-sizing: border-box;
-    margin: 0 0 20px auto;
+    margin: 0 0 0 auto;
 }
 
 .addButton_owPortal a {
