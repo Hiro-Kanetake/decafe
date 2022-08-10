@@ -1,7 +1,6 @@
 .searchbarWapper {
     margin: 0;
     background-color:#efefef;
-    height: 100vh;
     padding: 0;
 }
 
@@ -22,4 +21,12 @@
   .css-b62m3t-container {
     width: 800px;
     margin: 0 auto;
+    padding: 0 0 20px 0;
   }
+
+@media only screen and (max-width:599px) {
+    .css-b62m3t-container {
+        width: 95%;
+        margin: 0 10px;
+    }
+}

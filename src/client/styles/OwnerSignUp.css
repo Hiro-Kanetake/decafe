@@ -107,3 +107,10 @@
 .error-message {
   color: red;
 }
+
+@media only screen and (max-width:599px) {
+  .formBox_ow {
+    width: 95%;
+    margin: 0 10px 10px;
+  }
+}

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 .shopListWrapper {
     background: #eaeaea;
-    height: 100vh;
 }
 
 .shopListWrapperIn {
@@ -16,7 +15,8 @@
 }
 
 h2.searchResultTitle {
-    font-weight: lighter;
+    padding: 10px 0;
+    margin: 0;
 }
 
 span.stationName{
@@ -24,12 +24,17 @@ span.stationName{
     color: #dd904a;
 }
 
+.addButton_owPortal + .shopInfoWrapper {
+    border: 0;
+    background: none;
+}
 .shopInfoWrapper {
     width: 800px;
-    padding: 20px 0;
-    /* border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
     background: #fff;
-    border: 1px solid hsl(0, 0%, 80%); */
+    border: 1px solid hsl(0, 0%, 80%);
 }
 
 .shopInfoWrapper a, a:visited {
@@ -110,6 +115,7 @@ span.stationName{
     font-family: 'Poppins', sans-serif;
     min-width: auto;
     background: #fff;
+    border: 1px solid #eaeaea;
     box-shadow: 0 0 20px rgb(0 0 0 / 15%);
     margin-left: 0;
     margin-bottom: 20px;
@@ -148,4 +154,20 @@ span.stationName{
     display: block;
     color: #FFF;
     font-family: "Montserrat";
+}
+
+@media only screen and (max-width:599px) {
+    .shopInfoWrapper {
+        width: 95%;
+        margin: 0 10px;
+    }
+
+    .shopListWrapperIn {
+        width: 100%;
+    }
+
+    .addButton_owPortal {
+        margin: 0 10px 20px auto;
+    }
+    
 }
