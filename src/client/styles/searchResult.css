@@ -30,11 +30,11 @@ span.stationName{
 }
 .shopInfoWrapper {
     width: 800px;
-    padding: 20px;
     margin: 0 auto;
+    /* padding: 20px;
     border-radius: 8px;
     background: #fff;
-    border: 1px solid hsl(0, 0%, 80%);
+    border: 1px solid hsl(0, 0%, 80%); */
 }
 
 .shopInfoWrapper a, a:visited {
@@ -49,15 +49,14 @@ span.stationName{
 
 .shopInfo  {
     align-content: flex-start;
-    padding-bottom: 1rem;
     font-weight: bold;
     border-top: solid 1px rgb(86, 193, 255);
-    padding-top: 1rem;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid hsl(0, 0%, 80%);
 }
-
-/* .shopInfoText {
-
-} */
 
 .imageWrapper img {
     border: hidden;

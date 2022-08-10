@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
-.signup_ow {
-
-}
-
 .header_ow {
   display: flex;
   justify-content: space-between;
@@ -12,6 +8,7 @@
   background: #fff;
   position: fixed;
   width: 100%;
+  z-index: 9999;
 }
 
 .signup_ow #name,
