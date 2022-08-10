@@ -63,7 +63,7 @@ a  {
   margin-right: 30px;
   color: black;
   font-weight: 400;
-  font-family:"Roboto";
+  font-family: 'Poppins', sans-serif;
 }
 
 .shopLinkWrapper a:hover {
@@ -79,6 +79,7 @@ a  {
 }
 
 .header_owPortal {
+  top: 0;
   position: fixed;
   width: 100%;
   background: #fff;

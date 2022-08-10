@@ -10,7 +10,11 @@ form {
     max-width: 370px;
     margin: 10px auto;
     padding: 10px 20px;
-    font-family: "Montserrat";
+    font-family: 'Poppins', sans-serif;
+}
+
+.header_owPortal + form {
+    padding: 150px 20px 10px 20px;
 }
 
 h1 {
@@ -21,7 +25,8 @@ h1 {
 
 input {
     background-color: rgba(255, 255, 255, 0.1);
-    border: none;
+    border: 1px solid #9f9f9f;
+    border-radius: 8px;
     font-size: 16px;
     height: auto;
     margin: 0;
@@ -90,8 +95,10 @@ label {
     margin-bottom: 8px;
 }
 
+
 @media screen and (min-width: 480px) {
     form {
         max-width: 480px;
     }
+
 }
