@@ -9,10 +9,10 @@ const Logout: React.FC = () => {
   useEffect(() => {
     (async () => {
       await ownerLogout();
-      alert("Successfully logged out")
       navigate("/");
+      alert("Successfully logged out")
     })();
-  }, [navigate]);
+  }, []);
 
   return <></>;
 };
