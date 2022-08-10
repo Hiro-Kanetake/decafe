@@ -1,21 +1,25 @@
 .searchbarWapper {
-    margin: auto;
-    background-color:rgb(255, 255, 255);
-    align-items: center;
-    padding-top: 2rem;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    margin: 0;
+    background-color:#efefef;
+    height: 100vh;
+    padding: 0;
 }
 
-.logocenter{
-    display:flex;
-    justify-content: center;
+.searchbarWapper .logocenter {
+    width: 200px;
+    margin: 0 auto;
+    padding: 150px 0 20px 0;
 }
 
 .logo {
-    width: 250px;
+    width: 200px;
 }
 
 .ownerlogo{
     width: 300px;
+  }
+
+  .css-b62m3t-container {
+    width: 800px;
+    margin: 0 auto;
   }

@@ -9,6 +9,9 @@
   justify-content: space-between;
   padding: 0 10px;
   border-bottom: 1px solid #eaeaea;
+  background: #fff;
+  position: fixed;
+  width: 100%;
 }
 
 .signup_ow #name,
@@ -60,7 +63,7 @@
 }
 
 .sign-up {
-  padding: 0 0 50px 0;
+  height: 100vh;
   background: #efefef;
 }
 
@@ -88,7 +91,8 @@
 }
 
 .sign-up .logocenter {
-  padding: 50px 0 0 0;
+  padding: 150px 0 0 0;
+  text-align: center;
 }
 
 .buttonArea_ow {
@@ -97,7 +101,7 @@
 
 .buttonArea_ow #submit-button {
   width: 200px;
-  background: coral;
+  background: #dd904a;
   border: none;
 }
 .error-message {

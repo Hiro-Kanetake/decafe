@@ -59,10 +59,10 @@ const Owner: React.FC = () => {
   // This is for when we manage to implement shop create feature [Lines 58~93]
   useEffect(() => {
     // (async () => {
-      const filteredShops = allShops.filter((shop) => {
-        if (shop.owner_id == ownerId) return true;
-      })
-      setOwnerShops(filteredShops);
+    const filteredShops = allShops.filter((shop) => {
+      if (shop.owner_id == ownerId) return true;
+    });
+    setOwnerShops(filteredShops);
     // })
   }, [allShops]);
 
@@ -99,15 +99,18 @@ const Owner: React.FC = () => {
     return (
       <>
         <OwnerPortalHeader />
+
         <div className="shopListWrapper">
-          <h2>
-            My Shops <span className="stationName" />
-          </h2>
-          <p className="addButton_owPortal">
-            <Link to="/shops/new">Add Shop</Link>
-          </p>
-          <div className="shopInfoWrapper">{displayShops}</div>
-          <div className="cafeShopPicWrapper"></div>
+          <div className="shopListWrapperIn">
+            <h2>
+              My Shops <span className="stationName" />
+            </h2>
+            <p className="addButton_owPortal">
+              <Link to="/shops/new">Add Shop</Link>
+            </p>
+            <div className="shopInfoWrapper">{displayShops}</div>
+            <div className="cafeShopPicWrapper"></div>
+          </div>
         </div>
       </>
     );
@@ -126,7 +129,6 @@ const Owner: React.FC = () => {
       </>
     );
   }
-  
 };
 
 export default Owner;
