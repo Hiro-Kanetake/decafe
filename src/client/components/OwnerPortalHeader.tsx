@@ -23,7 +23,7 @@ const OwnerPortalHeader: React.FC = () => {
       setMessage(errorInfo.message);
     } else {
       // navigate("/");
-      navigate("/owners/id");
+      navigate("/owners");
     }
   };
 

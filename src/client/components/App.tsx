@@ -16,10 +16,10 @@ const App = () => {
           <Route path="/" element={<Home />}></Route>
           <Route path="/owners/login" element={<OwnerLogin />}></Route>
           <Route path="/owners/logout" element={<OwnerLogout />}></Route>
-          <Route path="/owners/new" element={<OwnerSignUp />}></Route>
-          <Route path="/shops/new"element={<ShopCreate />}></Route>
+          <Route path="/owners/access" element={<OwnerSignUp />}></Route>
+          <Route path="/shops/new" element={<ShopCreate />}></Route>
           <Route path="/shops/:id" element={<ShopDetail />}></Route>
-          <Route path="/owners/id" element={<Owner />}></Route>
+          <Route path="/owners" element={<Owner />}></Route>
         </Routes>
       </Router>
     </>

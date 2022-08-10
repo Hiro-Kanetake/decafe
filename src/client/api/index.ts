@@ -85,10 +85,14 @@ export const findShopAndMenuById = async (
  *
  * @returns All stations
  */
-export const findAllUniqueStations = async (): Promise<modelType.StationsGet[]> => {
+export const findAllUniqueStations = async (): Promise<
+  modelType.StationsGet[]
+> => {
   let stations: modelType.StationsGet[];
   try {
-    const response = await axios.get<modelType.StationsGet[]>(`/api/v1/stations`);
+    const response = await axios.get<modelType.StationsGet[]>(
+      `/api/v1/stations`
+    );
     stations = response.data;
   } catch (error) {
     throw error;
@@ -131,7 +135,7 @@ export const ownersSignUp = async (
   user: modelType.SignUpOwner
 ): Promise<modelType.ErrorInfo> => {
   const response = await axios.post<modelType.ErrorInfo>(
-    "/api/v1/owners/new",
+    "/api/v1/owners/access",
     user
   );
 
