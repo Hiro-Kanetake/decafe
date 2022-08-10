@@ -40,7 +40,7 @@ const ShopCreate: React.FC = () => {
   });
 
   const [owner_id, setOwnerId] = useState<number | null>(null);
-  
+
   const navigate = useNavigate();
   const navigateRef = useRef(navigate);
 
@@ -69,7 +69,7 @@ const ShopCreate: React.FC = () => {
         menus.push({ shop_id, name, price });
       }
       await createMenus(menus);
-      navigate(`shops/${shop_id}`);
+      navigate(`/owners/id`);
     } catch (error) {
       console.log(error);
     }
@@ -90,104 +90,104 @@ const ShopCreate: React.FC = () => {
 
   return (
     <>
-    <OwnerPortalHeader />
-    <form onSubmit={onSubmit}>
-      <h1>Add Shop</h1>
-      <fieldset>
-        <legend>
-          <span className="number">1</span> Shop Info
-        </legend>
-        <div className="error-message">{errors.shop?.name?.message}</div>
-        <label htmlFor="shop.name">Shop name:</label>
-        <input
-          {...register("shop.name", { required: "Required", maxLength: 255 })}
-          id="shop.name"
-          placeholder="Shop Name"
-        />
-        <div className="error-message">{errors.shop?.station?.message}</div>
-        <label htmlFor="shop.station">Station:</label>
-        <input
-          {...register("shop.station", {
-            required: "Required",
-            maxLength: 255,
-          })}
-          id="shop.station"
-          placeholder="Station"
-        />
-         <div className="error-message">{errors.shop?.city?.message}</div>
-        <label htmlFor="shop.city">City:</label>
-        <input
-          {...register("shop.city", { required: "Required", maxLength: 255 })}
-          id="shop.city"
-          placeholder="City"
-        />
-        <div className="error-message">{errors.shop?.address?.message}</div>
-        <label htmlFor="shop.address">Address:</label>
-        <input
-          {...register("shop.address", {
-            required: "Required",
-            maxLength: 255,
-          })}
-          id="shop.address"
-          placeholder="Address"
-        />
-        <div className="error-message">{errors.shop?.latitude?.message}</div>
-        <label htmlFor="shop.latitude">Latitude:</label>
-        <input
-          {...register("shop.latitude", {
-            required: "Required",
-            min: -90,
-            max: 90,
-          })}
-          id="shop.latitude"
-          placeholder="Latitude"
-        />
-        <div className="error-message">{errors.shop?.longitude?.message}</div>
-        <label htmlFor="shop.longitude">Longitude:</label>
-        <input
-          {...register("shop.longitude", {
-            required: "Required",
-            min: -180,
-            max: 180,
-            valueAsNumber: true,
-          })}
-          id="shop.longitude"
-          placeholder="Longitude"
-        />
-      </fieldset>
-      <fieldset>
-        <legend>
-          <span className="number">2</span> Menu Info
-        </legend>
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Name</th>
-              <th>Price</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {fields.map((field, index) => (
-              <MenuItem
-                key={field.id}
-                register={register}
-                menuIndex={index}
-                removeMenu={removeMenu}
-              />
-            ))}
-          </tbody>
-        </table>
-        <button type="button" className="menu-button" onClick={addMenu}>
-          +
+      <OwnerPortalHeader />
+      <form onSubmit={onSubmit}>
+        <h1>Add Shop</h1>
+        <fieldset>
+          <legend>
+            <span className="number">1</span> Shop Info
+          </legend>
+          <div className="error-message">{errors.shop?.name?.message}</div>
+          <label htmlFor="shop.name">Shop name:</label>
+          <input
+            {...register("shop.name", { required: "Required", maxLength: 255 })}
+            id="shop.name"
+            placeholder="Shop Name"
+          />
+          <div className="error-message">{errors.shop?.station?.message}</div>
+          <label htmlFor="shop.station">Station:</label>
+          <input
+            {...register("shop.station", {
+              required: "Required",
+              maxLength: 255,
+            })}
+            id="shop.station"
+            placeholder="Station"
+          />
+          <div className="error-message">{errors.shop?.city?.message}</div>
+          <label htmlFor="shop.city">City:</label>
+          <input
+            {...register("shop.city", { required: "Required", maxLength: 255 })}
+            id="shop.city"
+            placeholder="City"
+          />
+          <div className="error-message">{errors.shop?.address?.message}</div>
+          <label htmlFor="shop.address">Address:</label>
+          <input
+            {...register("shop.address", {
+              required: "Required",
+              maxLength: 255,
+            })}
+            id="shop.address"
+            placeholder="Address"
+          />
+          <div className="error-message">{errors.shop?.latitude?.message}</div>
+          <label htmlFor="shop.latitude">Latitude:</label>
+          <input
+            {...register("shop.latitude", {
+              required: "Required",
+              min: -90,
+              max: 90,
+            })}
+            id="shop.latitude"
+            placeholder="Latitude"
+          />
+          <div className="error-message">{errors.shop?.longitude?.message}</div>
+          <label htmlFor="shop.longitude">Longitude:</label>
+          <input
+            {...register("shop.longitude", {
+              required: "Required",
+              min: -180,
+              max: 180,
+              valueAsNumber: true,
+            })}
+            id="shop.longitude"
+            placeholder="Longitude"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>
+            <span className="number">2</span> Menu Info
+          </legend>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {fields.map((field, index) => (
+                <MenuItem
+                  key={field.id}
+                  register={register}
+                  menuIndex={index}
+                  removeMenu={removeMenu}
+                />
+              ))}
+            </tbody>
+          </table>
+          <button type="button" className="menu-button" onClick={addMenu}>
+            +
+          </button>
+        </fieldset>
+        <button type="submit" id="submit-button">
+          Add Shop
         </button>
-      </fieldset>
-      <button type="submit" id="submit-button">
-        Add Shop
-      </button>
-    </form>
-      </>
+      </form>
+    </>
   );
 };
 
