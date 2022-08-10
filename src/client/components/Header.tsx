@@ -6,9 +6,13 @@ import {
 } from "react-router-dom";
 import "../styles/header.css";
 import { decodeOwnerId } from "../api";
+import { useState } from "react";
 
 const Header = () => {
   const navigate = useNavigate();
+  // const [buttonText, setButtonText] = useState<string>("");
+  // setButtonText("OOOOOO");
+
   return (
     <header className="App-header">
       <div className="header">
@@ -17,7 +21,7 @@ const Header = () => {
           onClick={() => {
             decodeOwnerId()
               .then(() => {
-                navigate("./owners/id");
+                navigate("./owners");
               })
               .catch(() => {
                 navigate("./owners/new");
@@ -25,6 +29,7 @@ const Header = () => {
           }}
         >
           Owner Portal
+          {/* {buttonText} */}
         </button>
       </div>
     </header>

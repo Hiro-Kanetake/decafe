@@ -22,8 +22,8 @@ const OwnerSignUp: React.FC = () => {
     if (errorInfo.message) {
       setMessage(errorInfo.message);
     } else {
-      alert("You have successfully registered!")
-      navigate("/owners/id");
+      alert("You have successfully registered!");
+      navigate("/owners");
     }
   };
 

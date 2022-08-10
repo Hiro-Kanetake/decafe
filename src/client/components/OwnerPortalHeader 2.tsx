@@ -23,7 +23,7 @@ const OwnerPortalHeader: React.FC = () => {
       setMessage(errorInfo.message);
     } else {
       // navigate("/");
-      navigate("/owners/id");
+      navigate("/owners");
     }
   };
 
@@ -32,7 +32,7 @@ const OwnerPortalHeader: React.FC = () => {
       <OwnerHeader />
       <h1>OWNER PORTAL</h1>
       <p>
-         <Link to="/owners/logout">Logout</Link>
+        <Link to="/owners/logout">Logout</Link>
       </p>
     </>
   );

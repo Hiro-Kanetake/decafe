@@ -69,7 +69,7 @@ const ShopCreate: React.FC = () => {
         menus.push({ shop_id, name, price });
       }
       await createMenus(menus);
-      navigate(`/owners/id`);
+      navigate(`/owners`);
     } catch (error) {
       console.log(error);
     }
